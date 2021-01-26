@@ -8,6 +8,11 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     html {
+        font-family: 'Montserrat', sans-serif;
         font-size: 16px;
+    }
+
+    #root {
+        height: 200vh;
     }
 `;
