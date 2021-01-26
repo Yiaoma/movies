@@ -4,6 +4,7 @@ import Footer from "../containers/Footer";
 
 const Home = () => (
     <>
+        <Header/>
         <Footer/>
     </>
 );

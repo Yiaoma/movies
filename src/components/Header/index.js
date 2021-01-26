@@ -1,7 +1,7 @@
 import React, { useState , useContext, createContext, useEffect} from "react";
 import useToggle from "../../hooks/useToggle";
 import useScroll from "../../hooks/useScroll";
-import {Container, Base, Group, Logo, Trigger, Form, Input, Submit, Nav, List, Item} from "./styles";
+import {Container, Base, Group, Logo, Trigger, Form, Input, Submit, Nav, List, Item} from "./style";
 import {VscClose} from "react-icons/vsc";
 import {BiMenu} from "react-icons/bi";
 
