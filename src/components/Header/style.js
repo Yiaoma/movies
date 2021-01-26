@@ -7,12 +7,12 @@ export const Container = styled.header`
     left: 0;
     right: 0;
     display: flex;
-    transform: ${({isHidden}) => isHidden ? "translateY(-100%)" : "translateY(0)"};
+    /* transform: ${({isHidden}) => isHidden ? "translateY(-100%)" : "translateY(0)"}; */
     background-color: #333;
     padding: 1em;
     color: #fff;
     flex-direction: column;
-    transition: transform 1s ease;
+    transition: all 1s ease;
 
     @media (min-width: ${SMALL}px) {
         flex-direction: row;

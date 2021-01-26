@@ -11,8 +11,4 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
     }
-
-    #root {
-        height: 200vh;
-    }
 `;
