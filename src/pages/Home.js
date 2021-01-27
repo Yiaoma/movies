@@ -3,13 +3,13 @@ import {Main} from "../components";
 import Header from "../containers/Header";
 import Footer from "../containers/Footer";
 import Hero from "../containers/Hero";
+import List from "../containers/List";
 
 const Home = () => (
     <>
-        <Header/>
-        <Main>
-            <Hero/>
-        </Main>
+        <Hero/>
+        <List/>
+        <List/>
         <Footer/>
     </>
 );
