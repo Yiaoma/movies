@@ -3,3 +3,4 @@ export {default as Footer} from "./Footer";
 export {default as Main} from "./Main";
 export {default as Hero} from "./Hero";
 export {default as List} from "./List";
+export {default as Card} from "./Card";

@@ -30,6 +30,7 @@ Header.Logo = ({children, ...props}) => <Logo {...props}>{children}</Logo>;
 
 Header.Trigger = ({children, ...props}) => {
     const {isToggled, handleToggle} = useContext(ToggleContext);
+    
     return <Trigger onClick={handleToggle} {...props}>{isToggled ? <VscClose/> : <BiMenu/>}</Trigger>;
 }
 

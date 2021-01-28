@@ -8,7 +8,7 @@ import List from "../containers/List";
 const Home = () => (
     <>
         <Hero/>
-        <List/>
+        <Header/>
         <List/>
         <Footer/>
     </>

@@ -7,7 +7,7 @@ export const Container = styled.header`
     left: 0;
     right: 0;
     display: flex;
-    /* transform: ${({isHidden}) => isHidden ? "translateY(-100%)" : "translateY(0)"}; */
+    transform: ${({isHidden}) => isHidden ? "translateY(-100%)" : "translateY(0)"};
     background-color: #333;
     padding: 1em;
     color: #fff;
