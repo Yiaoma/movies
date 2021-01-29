@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import {LIGHT, DARK} from "./constants/colours";
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -10,5 +11,10 @@ export const GlobalStyle = createGlobalStyle`
     html {
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
+    }
+
+    #root {
+        background-color: ${LIGHT};
+        color: ${DARK};
     }
 `;

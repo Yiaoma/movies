@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {SMALL} from "../../constants/screenWidths";
+import {WHITE, LIGHT, DARK} from "../../constants/colours";
 
 export const Container = styled.header`
     position: fixed;
@@ -8,11 +9,12 @@ export const Container = styled.header`
     right: 0;
     display: flex;
     transform: ${({isHidden}) => isHidden ? "translateY(-100%)" : "translateY(0)"};
-    background-color: #333;
+    background-color: ${({isTransparent, isToggled}) => (isTransparent && !isToggled) ? "rgba(0,0,0,0)" : WHITE};
     padding: 1em;
-    color: #fff;
+    color: ${({isTransparent, isToggled}) => (isTransparent && !isToggled) ? WHITE : DARK};
     flex-direction: column;
     transition: all 1s ease;
+    box-shadow: 0 5px 5px rgba(0,0,0,.1);
 
     @media (min-width: ${SMALL}px) {
         flex-direction: row;
@@ -78,21 +80,29 @@ export const Input = styled.input`
     background: none;
     border: none;
     outline: none;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid ${LIGHT};
     padding: .2em .5em;
     font-size: 1.2rem;
-    color: #fff;
+    color: ${DARK};
+
+    @media (min-width: ${SMALL}px) {
+        color: ${LIGHT};
+    }
 `;
 
 export const Submit = styled.button`
     display: flex;
     align-items: center;
-    color: #fff;
+    color: ${DARK};
     background: none;
     border: none;
     font-size: 1.7rem;
     outline: none;
     margin-left: 1em;
+
+    @media (min-width: ${SMALL}px) {
+        color: ${LIGHT};
+    }
 `;
 
 export const Nav = styled.nav`

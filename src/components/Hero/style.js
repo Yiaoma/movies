@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {LIGHT} from "../../constants/colours";
 
 export const Background = styled.div`
     display: flex;
@@ -16,6 +17,6 @@ export const Frame = styled.div`
 
 export const Title = styled.h1`
     margin: 5em 0;
-    color: #eee;
+    color: ${LIGHT};
     text-align: center;
 `;

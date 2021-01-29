@@ -1,17 +1,17 @@
 import styled from "styled-components";
+import {WHITE, LIGHT, DARK} from "../../constants/colours";
 
 export const Container = styled.footer`
     display: flex;
-    background-color: #333;
     flex-direction: column;
     align-items: center;
     padding: 2em 1em;
-    color: #fff;
+    background-color: ${DARK};
 `;
 
 export const List = styled.ul`
     display: flex;
-    width: 50%;
+    width: 70%;
     list-style: none;
     justify-content: space-evenly;
     margin-bottom: 1em;
@@ -22,9 +22,10 @@ export const Item = styled.li`
 `;
 
 export const Link = styled.a`
-    color: #fff;
+    color: ${LIGHT};
 `;
 
 export const Copyright = styled.span`
     font-size: .7rem;
+    color: ${WHITE};
 `;

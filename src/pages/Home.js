@@ -7,9 +7,12 @@ import List from "../containers/List";
 
 const Home = () => (
     <>
-        <Hero/>
         <Header/>
-        <List/>
+        <Main>
+            <Hero/>
+            <List title="What's popular" path="/movie/popular"/>
+            <List title="Trending" path="/movie/now_playing"/>
+        </Main>
         <Footer/>
     </>
 );

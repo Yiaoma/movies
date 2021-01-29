@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from "react";
+import {useState, useEffect} from "react";
 
-const useScroll = () => {
+const useHidden = () => {
     const [prevPostion, setPrevPosition] = useState(0);
     const [isHidden, setIsHidden] = useState(false);
 
@@ -21,4 +21,4 @@ const useScroll = () => {
     return {isHidden};
 }
 
-export default useScroll;
+export default useHidden;

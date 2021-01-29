@@ -1,7 +1,7 @@
 import React from "react";
 import {Footer} from "../components";
 import {AiFillLinkedin, AiFillGithub, AiOutlineMail} from "react-icons/ai";
-import {GITHUB, LINKEDIN, EMAIL} from "../constants/routes";
+import {GITHUB, LINKEDIN, EMAIL} from "../constants/links";
 
 const FooterContainer = () => (
     <Footer>

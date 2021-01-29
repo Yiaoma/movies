@@ -1,19 +1,21 @@
 import React, { useState , useContext, createContext, useEffect} from "react";
-import useToggle from "../../hooks/useToggle";
-import useScroll from "../../hooks/useScroll";
 import {Container, Base, Group, Logo, Trigger, Form, Input, Submit, Nav, List, Item} from "./style";
+import useToggled from "../../hooks/useToggled";
+import useHidden from "../../hooks/useHidden";
+import useTransparent from "../../hooks/useTransparent";
 import {VscClose} from "react-icons/vsc";
 import {BiMenu} from "react-icons/bi";
 
 const ToggleContext = createContext();
 
 const Header = ({children, ...props}) => {
-    const {isToggled, handleToggle} = useToggle();
-    const {isHidden} = useScroll();
+    const {isToggled, handleToggle} = useToggled();
+    const {isHidden} = useHidden();
+    const {isTransparent} = useTransparent();
 
     return (
         <ToggleContext.Provider value={{isToggled, handleToggle}}>
-            <Container isHidden={isHidden} {...props}>{children}</Container>
+            <Container isToggled={isToggled} isTransparent={isTransparent} isHidden={isHidden} {...props}>{children}</Container>
         </ToggleContext.Provider>
     );
 };
