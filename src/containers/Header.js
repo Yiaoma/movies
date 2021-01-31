@@ -15,8 +15,8 @@ const HeaderContainer = () => (
                 </Header.Form>
                 <Header.Nav>
                     <Header.List>
-                        <Header.Item>Movies</Header.Item>
-                        <Header.Item>Tv Shows</Header.Item>
+                        <Header.Item>Movies &#9662;</Header.Item>
+                        <Header.Item>Tv Shows &#9662;</Header.Item>
                         <Header.Item>People</Header.Item>
                     </Header.List>
                 </Header.Nav>

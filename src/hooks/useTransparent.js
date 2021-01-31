@@ -10,7 +10,9 @@ const useTransparent = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
-    }, []);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [handleScroll]);
 
     return {isTransparent};
 }
